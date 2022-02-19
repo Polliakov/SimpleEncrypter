@@ -21,8 +21,10 @@ namespace SimpleEncripter
 
         public static byte[] Bytes(byte[] data, byte[] key)
         {
-            if (data is null) throw new ArgumentNullException(nameof(data));
-            if (key is null) throw new ArgumentNullException(nameof(key));
+            if (data is null) 
+                throw new ArgumentNullException(nameof(data));
+            if (key is null || key.Length == 0) 
+                throw new ArgumentNullException(nameof(key));
 
             byte[] s = KeySheduling(key);
             int x = 0;

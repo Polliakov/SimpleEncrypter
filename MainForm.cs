@@ -18,6 +18,11 @@ namespace SimpleEncripter
 
         private void BtEncryptRC4_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(tbKey.Text))
+            {
+                MessageBox.Show("Enter the key.");
+                return;
+            }
             var key = Encoding.UTF8.GetBytes(tbKey.Text);
             string ciper = RC4.Encrypt(tbInput.Text, key);
             tbOutput.Text = ciper;
@@ -25,6 +30,11 @@ namespace SimpleEncripter
 
         private void BtDecryptRC4_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(tbKey.Text))
+            {
+                MessageBox.Show("Enter the key.");
+                return;
+            }
             var key = Encoding.UTF8.GetBytes(tbKey.Text);
             string decrypted = RC4.Decrypt(tbInput.Text, key);
             tbOutput.Text = decrypted;
