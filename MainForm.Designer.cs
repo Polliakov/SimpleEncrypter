@@ -46,12 +46,14 @@
             // 
             // tbInput
             // 
+            this.tbInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbInput.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbInput.Location = new System.Drawing.Point(12, 32);
             this.tbInput.Multiline = true;
             this.tbInput.Name = "tbInput";
             this.tbInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbInput.Size = new System.Drawing.Size(796, 138);
+            this.tbInput.Size = new System.Drawing.Size(395, 138);
             this.tbInput.TabIndex = 0;
             // 
             // btEncryptRC4
@@ -69,20 +71,24 @@
             // 
             // tbOutput
             // 
+            this.tbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbOutput.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbOutput.Location = new System.Drawing.Point(12, 196);
             this.tbOutput.Multiline = true;
             this.tbOutput.Name = "tbOutput";
             this.tbOutput.ReadOnly = true;
             this.tbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbOutput.Size = new System.Drawing.Size(796, 138);
+            this.tbOutput.Size = new System.Drawing.Size(395, 138);
             this.tbOutput.TabIndex = 2;
             // 
             // tbKey
             // 
+            this.tbKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbKey.Location = new System.Drawing.Point(12, 360);
             this.tbKey.Name = "tbKey";
-            this.tbKey.Size = new System.Drawing.Size(796, 20);
+            this.tbKey.Size = new System.Drawing.Size(395, 20);
             this.tbKey.TabIndex = 3;
             // 
             // btDecryptRC4
@@ -186,7 +192,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(820, 466);
+            this.ClientSize = new System.Drawing.Size(419, 466);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btFileEncrypting);
             this.Controls.Add(this.label3);
