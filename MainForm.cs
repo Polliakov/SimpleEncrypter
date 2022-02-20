@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -37,6 +38,27 @@ namespace SimpleEncrypter
         {
             if (!CheckKey()) return;
             tbOutput.Text = Transposition.Decrypt(tbInput.Text, tbKey.Text);
+        }
+
+        private void BtFileEncrypting_Click(object sender, EventArgs e)
+        {
+            if (!CheckKey()) return;
+
+            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+            string path = openFileDialog.FileName;
+            var key = Encoding.UTF8.GetBytes(tbKey.Text);
+            try
+            {
+                var file = File.ReadAllBytes(path);
+                file = RC4.Bytes(file, key);
+                File.WriteAllBytes(path, file);
+                MessageBox.Show("Success");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Can't encrypt the file:\n{ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private bool CheckKey()
