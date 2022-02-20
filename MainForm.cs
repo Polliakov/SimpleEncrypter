@@ -2,7 +2,7 @@
 using System.Text;
 using System.Windows.Forms;
 
-namespace SimpleEncripter
+namespace SimpleEncrypter
 {
     public partial class MainForm : Form
     {

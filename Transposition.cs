@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SimpleEncripter
+namespace SimpleEncrypter
 {
     public static class Transposition
     {

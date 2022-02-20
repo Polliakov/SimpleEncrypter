@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace SimpleEncripter.Properties
+namespace SimpleEncrypter.Properties
 {
     /// <summary>
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.

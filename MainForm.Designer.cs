@@ -1,5 +1,5 @@
 ﻿
-namespace SimpleEncripter
+namespace SimpleEncrypter
 {
     partial class MainForm
     {
@@ -40,8 +40,11 @@ namespace SimpleEncripter
             // 
             // tbInput
             // 
+            this.tbInput.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbInput.Location = new System.Drawing.Point(12, 12);
+            this.tbInput.Multiline = true;
             this.tbInput.Name = "tbInput";
+            this.tbInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbInput.Size = new System.Drawing.Size(776, 20);
             this.tbInput.TabIndex = 0;
             // 
@@ -57,9 +60,12 @@ namespace SimpleEncripter
             // 
             // tbOutput
             // 
-            this.tbOutput.Location = new System.Drawing.Point(12, 69);
+            this.tbOutput.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbOutput.Location = new System.Drawing.Point(12, 64);
+            this.tbOutput.Multiline = true;
             this.tbOutput.Name = "tbOutput";
             this.tbOutput.ReadOnly = true;
+            this.tbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbOutput.Size = new System.Drawing.Size(776, 20);
             this.tbOutput.TabIndex = 2;
             // 
@@ -100,11 +106,11 @@ namespace SimpleEncripter
             this.btEncryptT.UseVisualStyleBackColor = true;
             this.btEncryptT.Click += new System.EventHandler(this.BtEncryptT_Click);
             // 
-            // MainForm
+            // SimpleEncrypter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(820, 477);
             this.Controls.Add(this.btEncryptT);
             this.Controls.Add(this.btDecryptT);
             this.Controls.Add(this.btDecryptRC4);
@@ -112,7 +118,7 @@ namespace SimpleEncripter
             this.Controls.Add(this.tbOutput);
             this.Controls.Add(this.btEncryptRC4);
             this.Controls.Add(this.tbInput);
-            this.Name = "MainForm";
+            this.Name = "SimpleEncrypter";
             this.Text = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();

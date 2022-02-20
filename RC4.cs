@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace SimpleEncripter
+namespace SimpleEncrypter
 {
     public static class RC4
     {
