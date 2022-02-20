@@ -70,5 +70,13 @@ namespace SimpleEncrypter
             }
             return true;
         }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.K)
+                tbKey.Text = string.Empty;
+            if (e.Control && e.KeyCode == Keys.T)
+                tbInput.Text = string.Empty;
+        }
     }
 }
