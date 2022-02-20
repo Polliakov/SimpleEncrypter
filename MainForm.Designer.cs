@@ -34,6 +34,8 @@ namespace SimpleEncripter
             this.tbOutput = new System.Windows.Forms.TextBox();
             this.tbKey = new System.Windows.Forms.TextBox();
             this.btDecryptRC4 = new System.Windows.Forms.Button();
+            this.btDecryptT = new System.Windows.Forms.Button();
+            this.btEncryptT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbInput
@@ -65,7 +67,7 @@ namespace SimpleEncripter
             // 
             this.tbKey.Location = new System.Drawing.Point(118, 125);
             this.tbKey.Name = "tbKey";
-            this.tbKey.Size = new System.Drawing.Size(100, 20);
+            this.tbKey.Size = new System.Drawing.Size(246, 20);
             this.tbKey.TabIndex = 3;
             // 
             // btDecryptRC4
@@ -78,11 +80,33 @@ namespace SimpleEncripter
             this.btDecryptRC4.UseVisualStyleBackColor = true;
             this.btDecryptRC4.Click += new System.EventHandler(this.BtDecryptRC4_Click);
             // 
+            // btDecryptT
+            // 
+            this.btDecryptT.Location = new System.Drawing.Point(13, 210);
+            this.btDecryptT.Name = "btDecryptT";
+            this.btDecryptT.Size = new System.Drawing.Size(98, 23);
+            this.btDecryptT.TabIndex = 5;
+            this.btDecryptT.Text = "Decrypt T";
+            this.btDecryptT.UseVisualStyleBackColor = true;
+            this.btDecryptT.Click += new System.EventHandler(this.btDecryptT_Click);
+            // 
+            // btEncryptT
+            // 
+            this.btEncryptT.Location = new System.Drawing.Point(13, 181);
+            this.btEncryptT.Name = "btEncryptT";
+            this.btEncryptT.Size = new System.Drawing.Size(98, 23);
+            this.btEncryptT.TabIndex = 6;
+            this.btEncryptT.Text = "Encrypt T";
+            this.btEncryptT.UseVisualStyleBackColor = true;
+            this.btEncryptT.Click += new System.EventHandler(this.BtEncryptT_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btEncryptT);
+            this.Controls.Add(this.btDecryptT);
             this.Controls.Add(this.btDecryptRC4);
             this.Controls.Add(this.tbKey);
             this.Controls.Add(this.tbOutput);
@@ -102,5 +126,7 @@ namespace SimpleEncripter
         private System.Windows.Forms.TextBox tbOutput;
         private System.Windows.Forms.TextBox tbKey;
         private System.Windows.Forms.Button btDecryptRC4;
+        private System.Windows.Forms.Button btDecryptT;
+        private System.Windows.Forms.Button btEncryptT;
     }
 }
